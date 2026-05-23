@@ -28,7 +28,7 @@ def generate_response(question, engine, temperature, max_token):
     return answer
 
 st.title("QA CHATBOT")
-engine =st.sidebar.selectbox("Select Model", ["mixtral-8x7b-32768", "llama3-groq-70b-8192-tool-use-preview", "llama3-70b-8192",  "llama-3.1-70b-versatile", "llama-3.1-8b-instant", "llama-guard-3-8b", "gemma2-9b-it",  "gemma-7b-it"])
+engine =st.sidebar.selectbox("Select Model", ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "meta-llama/llama-4-maverick-17b-128e-instruct","meta-llama/llama-4-scout-17b-16e-instruct","qwen/qwen3-32b","openai/gpt-oss-120b"])
 temperature = st.sidebar.slider("Temperature", min_value=0.0, max_value=1.0, value = 0.7)
 max_token = st.sidebar.slider("Max token", min_value=50, max_value= 300, value=150)
 
